@@ -1,8 +1,7 @@
 #include <iostream>
 #include <array>
 
-int main()
-{
+int main() {
     std::array<char, 30> actor;
     std::array<short, 100> betsie;
     std::array<float, 13> chuck;
