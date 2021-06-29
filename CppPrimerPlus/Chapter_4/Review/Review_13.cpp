@@ -4,7 +4,7 @@
 
 int main() {
     int *arr = new int[10];
-    std::cout << "the length of arr is " << _msize(arr) / sizeof(int) << std::endl;
+    //std::cout << "the length of arr is " << _msize(arr) / sizeof(int) << std::endl;
     delete [] arr;
 
     std::vector<int> arr2(10);
