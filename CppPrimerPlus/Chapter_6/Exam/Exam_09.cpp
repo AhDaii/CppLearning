@@ -5,7 +5,7 @@ using namespace std;
 
 struct orz{
     string name;
-    int mon;
+    double mon;
 };
 
 int main() {
