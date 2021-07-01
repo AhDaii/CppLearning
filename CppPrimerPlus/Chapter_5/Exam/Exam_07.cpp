@@ -23,5 +23,6 @@ int main() {
     cout << "Here is your collection:" << endl;
     for(int i = 0; i < N; i ++) 
         cout << cars[i].year_of_production << " " << cars[i].manufacturer << endl;
+    delete [] cars;
     return 0;
 }
