@@ -5,7 +5,7 @@ using namespace std;
 
 struct orz{
     string name;
-    double mon;
+    int mon;
 };
 
 int main() {
@@ -19,8 +19,11 @@ int main() {
     ifs >> N;
     int count = 0;
     struct orz *arr = new struct orz[N];
-    for(int i = 0; i < N; i ++)
-        ifs >> arr[i].name >> arr[i].mon;
+    for(int i = 0; i < N; i ++) {
+        ifs.get();
+        getline(ifs, arr[i].name);
+        ifs >> arr[i].mon;
+    }
 
     cout << "Grand Patrons:" << endl;
     for(int i = 0; i < N; i ++)
