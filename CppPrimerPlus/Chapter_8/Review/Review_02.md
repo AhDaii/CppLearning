@@ -1,5 +1,6 @@
 ## 假设song()函数的原型如下：
 void song(const char *name, int times);
+
 a. 如何修改原型，使times的默认值为1
 
 b. 函数定义需要做哪些修改？
