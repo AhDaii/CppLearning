@@ -8,11 +8,11 @@ c. average(3, 6)返回两个int参数的平均值(int类型)，而average(3.0, 6
 
 d. mangle("I'm glad to meet you")根据是将值赋给char变量还是char*变量，分别返回字符I和只想字符串"I'm mad to gleet you"的指针。
 
-- double mass(double density, double volume = 1.0);
-- 无法使用默认参数，可以使用重载完成:
+1. double mass(double density, double volume = 1.0);
+2. 无法使用默认参数，可以使用重载完成:
     - void repeat(int num, string str);
     - void repeat(string str);
-- 重载：
+3. 重载：
     - int average(int x, int y);
     - double average(double x, double y);
-- 无法用重载和默认参数完成。
+4. 无法用重载和默认参数完成。
