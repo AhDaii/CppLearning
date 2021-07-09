@@ -24,6 +24,6 @@ int main() {
     cout << (int *)&arr[1] << endl; */
     
     for(int i = 0; i < 2; i ++)
-        cout << "[SHOW "<< i << "] dross: " << arr[i].dross << ", slag " << arr[i].slag << endl;
+        cout << "[SHOW "<< i << "] dross: " << arr[i].dross << ", slag: " << arr[i].slag << endl;
     return 0;
 }
