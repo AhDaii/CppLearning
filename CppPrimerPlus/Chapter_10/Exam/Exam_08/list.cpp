@@ -32,7 +32,7 @@ void List::show() const {
         std::cout << "[SHOW] the list is empty" << std::endl;
     else {
         std::cout << "[SHOW] elements in the list:";
-        for(int i =0; i < cur; i ++)
+        for(int i = 0; i < cur; i ++)
             std::cout << " " << arr[i];
         std::cout << std::endl;
     }
