@@ -60,8 +60,8 @@ namespace JJ
 
         // 申请空间
         // hint表示位置
-        pointer allocate(size_type n, T* hint = 0) {  // 不能使用const void *，编译报错
-            return _allocate((difference_type)n, hint);
+        pointer allocate(size_type n, const void* hint = 0) {
+            return _allocate((difference_type)n, (pointer)hint);
         }
 
         // 释放空间
