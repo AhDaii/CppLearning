@@ -16,7 +16,7 @@ namespace JJ
     inline T* _allocate(ptrdiff_t size, T*) {
         set_new_handler(0);  // 卸载目前的内存分配异常处理函数, 直接抛出bad_alloc异常
         T* tmp = (T*)(::operator new((size_t)(size * sizeof(T))));
-        if(tmp == 0) {  // 申请失败
+        if (tmp == 0) {  // 申请失败
             cerr << "out of memory" << endl;
             exit(1);
         }
@@ -32,7 +32,7 @@ namespace JJ
     // 生成对象
     template <class T1, class T2>
     inline void _construct(T1* p, const T2& value) {
-        new(p) T2(value);
+        new (p) T2(value);
     }
 
     // 销毁对象
