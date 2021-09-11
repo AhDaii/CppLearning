@@ -1,4 +1,3 @@
-#include "../../SGI_STL/iterator"
 #include "../../SGI_STL/numeric"
 #include <iostream>
 #include <vector>
@@ -42,6 +41,6 @@ int main() {
     std::vector<int> v(a, a + 5);
     my_adjacent_difference(v.begin(), v.end(), ostream_iterator<int>(std::cout, " "));
     std::cout << '\n';
-    my_adjacent_difference(v.begin(), v.end(), ostream_iterator<int>(std::cout, " "), std::plus<int>());
+    my_adjacent_difference(v.begin(), v.end(), ostream_iterator<int>(std::cout, " "), plus<int>());
     return 0;
 }
